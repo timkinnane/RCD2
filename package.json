@@ -7,6 +7,7 @@
   "dependencies": {
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
+    "hubot-help": "^0.2.0",
     "hubot-heroku-keepalive": "^1.0.2",
     "hubot-mongodb-brain": "^0.1.1",
     "hubot-rocketchat": "^1.0.1"
