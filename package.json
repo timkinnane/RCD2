@@ -1,0 +1,26 @@
+{
+  "name": "rcd2",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Tim Kinnane <tim@nestedcode.com>",
+  "description": "A helper bot to test bot helpers (with Rocket.Chat)",
+  "dependencies": {
+    "hubot": "^2.19.0",
+    "hubot-diagnostics": "0.0.1",
+    "hubot-heroku-keepalive": "^1.0.2",
+    "hubot-mongodb-brain": "^0.1.1",
+    "hubot-rocketchat": "0.1.4"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "bugs": {
+    "url": "https://github.com/timkinnane/RCD2/issues"
+  },
+  "scripts": {
+    "run": "bin/hubot -a rocketchat",
+    "watch": "nodemon",
+    "debug": "opener http://127.0.0.1:3004/?port=5858 && node-inspector --web-port=3004 --web-host=localhost & nodemon",
+    "kill": "kill -9 `ps ax | grep hubot | awk '{print $1}'`"
+  }
+}
